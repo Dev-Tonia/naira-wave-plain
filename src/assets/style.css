@@ -1,0 +1,94 @@
+main {
+  margin-top: "30px";
+  padding-bottom: "70px";
+}
+.navbar-item a {
+  text-decoration: none;
+}
+.navbar-item span {
+  font-size: 20px;
+}
+.title {
+  display: none;
+}
+a.active .title {
+  display: block;
+}
+
+.navbar-item:has(a.active) {
+  /* targeting the parent of the nav link */
+  border-bottom: 2px solid #ffc107;
+}
+
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.custom-container {
+  max-width: 520px;
+  margin: auto;
+  padding: 0 20px;
+}
+.img-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.circle {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(201, 200, 200);
+}
+.naira p {
+  margin-bottom: 0;
+}
+.w-6 {
+  width: 40px;
+  height: 40px;
+  color: rgb(236, 236, 13);
+}
+.iconify {
+  width: 18px;
+  height: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px !important ;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .productCard span {
+    font-size: 30px;
+  }
+  .productCard {
+    width: 75px;
+    height: 75px;
+  }
+  .productCard span {
+    font-size: 20px;
+  }
+  .productCard h6 {
+    font-size: 12px;
+  }
+  .custom-btn span {
+    font-size: 13px;
+  }
+  .img-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navbar-item span {
+    font-size: 18px;
+  }
+}

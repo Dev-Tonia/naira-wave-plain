@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./src/assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="custom-shadow bg-white fixed-bottom">
+      <div class="custom-container">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- Nav Items -->
+          <div class="text-center px-3 py-2 navbar-item">
+            <a
+              href="/index.html"
+              class="text-body"
+              activeClassName="activeLink"
+            >
+              <span><i class="ri-home-2-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Home</p>
+            </a>
+          </div>
+          <div class="text-center px-3 py-2 navbar-item">
+            <a
+              href="/service.html"
+              class="text-body"
+              activeClassName="activeLink"
+            >
+              <span><i class="ri-briefcase-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Services</p>
+            </a>
+          </div>
+          <div class="text-center px-3 py-2 navbar-item">
+            <a
+              href="/transactions.html"
+              class="text-body"
+              activeClassName="activeLink"
+            >
+              <span><i class="ri-folder-zip-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Transactions</p>
+            </a>
+          </div>
+          <div class="text-center px-3 py-2 navbar-item">
+            <a
+              href="/profile.html"
+              class="text-body"
+              activeClassName="activeLink"
+            >
+              <span><i class="ri-user-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Profile</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Tag -->
+    <main class=" ">
+      <!-- Main Header -->
+      <div class="custom-container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="img-wrapper rounded-circle overflow-hidden">
+              <img
+                src="./src/assets/imgs/profile.jpg"
+                alt="User Profile Image"
+                class="img-fluid"
+              />
+            </div>
+            <h3 class="fw-bolder ps-3">Hi, Tonia</h3>
+          </div>
+          <!-- See to this -->
+          <!-- <div class=" icon ">
+            <span class=" text-warning fs-1 ">
+              <BiMessageDetail />
+            </span>
+          </div> -->
+        </div>
+      </div>
+      <!-- Account Action -->
+      <div class="custom-container">
+        <div class="mt-3">
+          <div
+            class="rounded d-inline-block mx-1 px-2 py-1 border-1 custom-shadow"
+          >
+            <span class="fs-6">Spend</span>
+          </div>
+          <div
+            class="rounded d-inline-block mx-1 px-2 py-1 border-1 custom-shadow"
+          >
+            <span class="fs-6">Transactions</span>
+          </div>
+          <div
+            class="rounded d-inline-block mx-1 px-2 py-1 border-1 custom-shadow"
+          >
+            <span class="fs-6">Send</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Account Balance -->
+      <div class="custom-container">
+        <div class="d-flex gap-2 mt-4 naira">
+          <div class="icon-wrapper">
+            <svg
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--twemoji"
+              preserveAspectRatio="xMidYMid meet"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="#009A49"
+                  d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"
+                ></path>
+                <path fill="#EEE" d="M12 5h12v26H12z"></path>
+                <path
+                  fill="#009A49"
+                  d="M32 5h-8v26h8a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <p class="fw-medium">Nigerian Naira</p>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <span class="fw-bold fs-5">&#8358;</span>
+            <span class="fw-bold fs-5 d-inline-block ms-1">300.00</span>
+          </div>
+          <div
+            class="circle rounded-circle custom-shadow d-flex align-items-center justify-content-center bg-opacity-75"
+          >
+            <span style="font-size: 20px"><i class="ri-more-fill"></i></span>
+          </div>
+        </div>
+        <p class="text-secondary">Last updated few hours ago</p>
+      </div>
+
+      <!-- Action type -->
+      <div class="custom-container">
+        <div class="d-flex gap-3 justify-content-between">
+          <!-- <CustomButton icon="{<RiArrowUpFill" />} title={"Transfer"}
+          customClass={" justify-content-center"} /> -->
+          <button
+            type="button"
+            class="justify-content-center btn d-flex gap-2 align-items-center fw-bolder custom-shadow ${isColor} custom-btn"
+          >
+            <div
+              style="width: 25px; height: 25px"
+              class="d-flex align-items-center justify-content-center bg-warning rounded-circle text-white fs-5"
+            >
+              <i class="ri-arrow-up-fill"></i>
+            </div>
+
+            <span class="text-warning">Transfer</span>
+
+            <!-- <span className=" text-warning">{title}</span> -->
+          </button>
+          <button
+            type="button"
+            class="justify-content-center btn d-flex gap-2 align-items-center fw-bolder custom-shadow ${isColor} custom-btn"
+          >
+            <div
+              style="width: 25px; height: 25px"
+              class="d-flex align-items-center justify-content-center bg-warning rounded-circle text-white fs-5"
+            >
+              <i class="ri-add-fill"></i>
+            </div>
+
+            <span class="text-warning">Add Money</span>
+
+            <!-- <span className=" text-warning">{title}</span> -->
+          </button>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <!-- Slider will come in here -->
+
+      <!-- Products -->
+      <section class="mt-5 custom-container">
+        <h5 class="text-secondary fw-medium">Quick Access</h5>
+        <div class="product overflow-auto">
+          <!-- {products.map((product) => (
+          <ProductCard product="{product}" key="{product.title}" />
+          ))} -->
+          <div
+            className=" col m-2 custom-shadow d-flex align-items-center justify-content-center"
+          >
+            <a
+              onClick="{navigateTo}"
+              className="icon-box text-center py-4 px-3 productCard"
+            >
+              <!-- <span
+                style={{
+                  color: product.iconColor,
+                }}
+              > -->
+              <span> {product.iconName} </span>
+              <div>
+                <h6>{product.title}</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
