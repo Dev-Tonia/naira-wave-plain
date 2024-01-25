@@ -21,11 +21,7 @@
         <div class="d-flex align-items-center justify-content-between">
           <!-- Nav Items -->
           <div class="text-center px-3 py-2 navbar-item">
-            <a
-              href="/index.html"
-              class="text-body"
-              activeClassName="activeLink"
-            >
+            <a href="/index.html" class="text-body" activeClass="activeLink">
               <span><i class="ri-home-2-line"></i></span>
               <p class="mb-0 fs-6 text-warning fw-medium title">Home</p>
             </a>
@@ -202,26 +198,119 @@
       <section class="mt-5 custom-container">
         <h5 class="text-secondary fw-medium">Quick Access</h5>
         <div class="product overflow-auto">
-          <!-- {products.map((product) => (
-          <ProductCard product="{product}" key="{product.title}" />
-          ))} -->
           <div
-            className=" col m-2 custom-shadow d-flex align-items-center justify-content-center"
+            class="col m-2 custom-shadow d-flex align-items-center justify-content-center"
           >
             <a
-              onClick="{navigateTo}"
-              className="icon-box text-center py-4 px-3 productCard"
+              href="/service.html"
+              class="icon-box text-dark text-decoration-none text-center py-4 px-3 productCard"
             >
-              <!-- <span
-                style={{
-                  color: product.iconColor,
-                }}
-              > -->
-              <span> {product.iconName} </span>
+              <span style="color: orange">
+                <i class="ri-phone-fill"></i>
+              </span>
+
               <div>
-                <h6>{product.title}</h6>
+                <h6>Airtime</h6>
               </div>
             </a>
+          </div>
+          <div
+            class="col m-2 custom-shadow d-flex align-items-center justify-content-center"
+          >
+            <a
+              href="/service.html"
+              class="icon-box text-dark text-decoration-none text-center py-4 px-3 productCard"
+            >
+              <span style="color: red">
+                <i class="ri-wifi-fill"></i>
+              </span>
+
+              <div>
+                <h6>Internet</h6>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col m-2 custom-shadow d-flex align-items-center justify-content-center"
+          >
+            <a
+              href="/service.html"
+              class="icon-box text-dark text-decoration-none text-center py-4 px-3 productCard"
+            >
+              <span style="color: green">
+                <i class="ri-tv-fill"></i>
+              </span>
+
+              <div>
+                <h6>Cable</h6>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col m-2 custom-shadow d-flex align-items-center justify-content-center"
+          >
+            <a
+              href="/service.html"
+              class="icon-box text-dark text-decoration-none text-center py-4 px-3 productCard"
+            >
+              <span style="color: red">
+                <i class="ri-lightbulb-flash-fill"></i>
+              </span>
+
+              <div>
+                <h6>Electricity</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="mt-3">
+        <div class="custom-container">
+          <p class="fw-medium">Recent Transaction Details</p>
+        </div>
+
+        <!-- Transaction list -->
+        <div class="transaction-tile">
+          <div class="bg-body-secondary">
+            <div class="custom-container">
+              <span class="fw-medium">27 Nov 2023</span>
+            </div>
+          </div>
+          <div class="bg-white border-bottom">
+            <div class="custom-container py-3">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-around"
+                    style="
+                      background: rgba(86, 123, 27, 0.7);
+                      width: 40px;
+                      height: 40px;
+                    "
+                  >
+                    <div
+                      style="width: 30px; height: 30px"
+                      class="rounded-circle d-flex align-items-center justify-content-around overflow-hidden"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="https://res.cloudinary.com/tonia/image/upload/v1695643582/images/9mobile2_lywgta.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="ps-3">
+                    <p class="fw-medium mb-0">9MOBILE VTU</p>
+                    <p class="text-secondary mb-0">06:55 pm</p>
+                  </div>
+                </div>
+                <div class="fw-bold fs-5 text-success">
+                  <span>+</span>
+                  <span class=" ">&#8358;</span>
+                  <span class="d-inline-block">300.00</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
