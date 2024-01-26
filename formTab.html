@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./src/assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="custom-shadow bg-white fixed-bottom">
+      <div class="custom-container">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- Nav Items -->
+          <div class="text-center px-3 py-2 navbar-item">
+            <a href="/index.html" class="text-body" activeClass="activeLink">
+              <span><i class="ri-home-2-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Home</p>
+            </a>
+          </div>
+          <div class="text-center px-3 py-2 navbar-item">
+            <a
+              href="/service.html"
+              class="text-body"
+              activeClassName="activeLink"
+            >
+              <span><i class="ri-briefcase-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Services</p>
+            </a>
+          </div>
+          <div class="text-center px-3 py-2 navbar-item">
+            <a
+              href="/transactions.html"
+              class="text-body"
+              activeClassName="activeLink"
+            >
+              <span><i class="ri-folder-zip-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Transactions</p>
+            </a>
+          </div>
+          <div class="text-center px-3 py-2 navbar-item">
+            <a
+              href="/profile.html"
+              class="text-body"
+              activeClassName="activeLink"
+            >
+              <span><i class="ri-user-line"></i></span>
+              <p class="mb-0 fs-6 text-warning fw-medium title">Profile</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Tag -->
+    <main class="">
+      <div class="custom-container pt-4 pb-5 custom-shadow">
+        <h2 class="fw-semibold mt-4 pt-1">What are you paying for Today</h2>
+        <ul class="nav nav-tabs pt-5">
+          <li class="nav-item">
+            <a href="#airtime" class="nav-link active" data-bs-toggle="tab"
+              >Airtime</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#profile" class="nav-link" data-bs-toggle="tab"
+              >Internet
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#messages" class="nav-link" data-bs-toggle="tab">Tv</a>
+          </li>
+        </ul>
+        <div class="tab-content pt-5">
+          <!-- AIRTIME TAB -->
+          <div class="tab-pane fade show active" id="airtime">
+            <div>
+              <div class="d-flex justify-content-between pb-2">
+                <!-- <GoBackButton /> -->
+                <h2 class="fw-medium fs-4">Buy Airtime</h2>
+                <div></div>
+              </div>
+              <p class="text-secondary">Balance: <span>200</span></p>
+              <form action="">
+                <div class="mb-3">
+                  <label for="amount" class="form-label mb-1 fw-medium">
+                    Amount
+                  </label>
+                  <input
+                    type="text"
+                    id="amount"
+                    name="Amount"
+                    class="form-control"
+                    placeholder="Enter Amount"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="network" class="form-label mb-1 fw-medium"
+                    >Select Network
+                  </label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="network"
+                  >
+                    <option value="">Select Your Network</option>
+                    <option value="MTN">MTN</option>
+                    <option value="Glo">Glo</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="9mobile">9mobile</option>
+                  </select>
+                </div>
+
+                <div className=" mb-3">
+                  <label for="phoneNumber" class="form-label mb-1 fw-medium">
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    name="Phone Number"
+                    class="form-control"
+                    placeholder="Enter Phone Number"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="justify-content-center btn w-100 mt-3 d-flex gap-2 align-items-center fw-bolder custom-shadow bg-warning custom-btn"
+                >
+                  <span class="text-white">Proceed</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- INTERNET TAB -->
+          <div class="tab-pane fade" id="profile">
+            <div class="tab-pane fade show active" id="airtime">
+              <div>
+                <div class="d-flex justify-content-between pb-2">
+                  <!-- <GoBackButton /> -->
+                  <h2 class="fw-medium fs-4">Buy Data Bundle</h2>
+                  <div></div>
+                </div>
+                <p class="text-secondary">Balance: <span>200</span></p>
+                <form action="">
+                  <div class="mb-3">
+                    <label for="network" class="form-label mb-1 fw-medium"
+                      >Select Network
+                    </label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="network"
+                    >
+                      <option value="">Select Your Network</option>
+                      <option value="MTN">MTN</option>
+                      <option value="Glo">Glo</option>
+                      <option value="Airtel">Airtel</option>
+                      <option value="9mobile">9mobile</option>
+                    </select>
+                  </div>
+
+                  <!-- When a user choose a network, map in the value -->
+                  <div class="mb-3">
+                    <label for="plan" class="form-label mb-1 fw-medium"
+                      >Select Plan
+                    </label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="plan"
+                    >
+                      <option value="">Select Plan</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="amount" class="form-label mb-1 fw-medium">
+                      Amount
+                    </label>
+                    <input
+                      type="text"
+                      id="amount"
+                      name="Amount"
+                      class="form-control"
+                      placeholder="Enter Amount"
+                    />
+                  </div>
+                  <div className=" mb-3">
+                    <label for="phoneNumber" class="form-label mb-1 fw-medium">
+                      Phone Number
+                    </label>
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      name="Phone Number"
+                      class="form-control"
+                      placeholder="Enter Phone Number"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="justify-content-center btn w-100 mt-3 d-flex gap-2 align-items-center fw-bolder custom-shadow bg-warning custom-btn"
+                  >
+                    <span class="text-white">Proceed</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- TV TAB -->
+          <div class="tab-pane fade" id="messages">
+            <div class="tab-pane fade show active" id="airtime">
+              <div>
+                <div class="d-flex justify-content-between pb-2">
+                  <!-- <GoBackButton /> -->
+                  <h2 class="fw-medium fs-4">Buy Cable Sub</h2>
+                  <div></div>
+                </div>
+                <p class="text-secondary">Balance: <span>200</span></p>
+                <form action="">
+                  <div class="mb-3">
+                    <label for="tvProvider" class="form-label mb-1 fw-medium"
+                      >Select Tv Provider
+                    </label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="tvProvider"
+                    >
+                      <option value="">Select Tv Provider</option>
+                      <option value="GoTv">GoTv</option>
+                      <option value="DSTV">DSTV</option>
+                      <option value="StarTime">StarTime</option>
+                    </select>
+                  </div>
+
+                  <!-- When a user choose a tvProvider, map in the value -->
+                  <div class="mb-3">
+                    <label for="plan" class="form-label mb-1 fw-medium"
+                      >Select Plan
+                    </label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="plan"
+                    >
+                      <option value="">Select Plan</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="cardNumber" class="form-label mb-1 fw-medium">
+                      Card Number
+                    </label>
+                    <input
+                      type="text"
+                      id="cardNumber"
+                      name="cardNumber"
+                      class="form-control"
+                      placeholder="Enter Card Number"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="amount" class="form-label mb-1 fw-medium">
+                      Amount
+                    </label>
+                    <input
+                      type="text"
+                      id="amount"
+                      name="Amount"
+                      class="form-control"
+                      placeholder="Enter Amount"
+                    />
+                  </div>
+                  <div className=" mb-3">
+                    <label for="phoneNumber" class="form-label mb-1 fw-medium">
+                      Phone Number
+                    </label>
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      name="Phone Number"
+                      class="form-control"
+                      placeholder="Enter Phone Number"
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="justify-content-center btn w-100 mt-3 d-flex gap-2 align-items-center fw-bolder custom-shadow bg-warning custom-btn"
+                  >
+                    <span class="text-white">Proceed</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
